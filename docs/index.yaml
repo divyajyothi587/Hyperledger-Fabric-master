@@ -1,0 +1,74 @@
+apiVersion: v1
+entries:
+  dind:
+  - apiVersion: v1
+    appVersion: stable-dind
+    created: 2019-12-19T14:39:59.711765669+05:30
+    description: DinD Deployment chart
+    digest: e6b1347a552b258a8b1906d09410bbf83c861f3191953d9f9211e3116a07372e
+    keywords:
+    - dind
+    - Kubernetes
+    - chaincode
+    name: dind
+    urls:
+    - https://akhilrajmailbox.github.io/Hyperledger-Fabric/docs/dind-0.1.0.tgz
+    version: 0.1.0
+  hlf-ca:
+  - apiVersion: v1
+    appVersion: 1.4.3
+    created: 2019-12-19T14:39:59.713611837+05:30
+    description: Hyperledger Fabric Certificate Authority chart
+    digest: f7f943322ac995137304be5ab21e3f99706d2ade91e505ae11e89a3f072816f5
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    name: hlf-ca
+    urls:
+    - https://akhilrajmailbox.github.io/Hyperledger-Fabric/docs/hlf-ca-0.1.0.tgz
+    version: 0.1.0
+  hlf-couchdb:
+  - apiVersion: v1
+    appVersion: 0.4.10
+    created: 2019-12-19T14:39:59.714000193+05:30
+    description: CouchDB instance for Hyperledger Fabric
+    digest: bbd3448846558ccf631afe559c20aca7d582c380084b0e5826c83aa6d2ef5297
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    - couchdb
+    name: hlf-couchdb
+    urls:
+    - https://akhilrajmailbox.github.io/Hyperledger-Fabric/docs/hlf-couchdb-0.1.0.tgz
+    version: 0.1.0
+  hlf-ord:
+  - apiVersion: v1
+    appVersion: 1.4.3
+    created: 2019-12-19T14:39:59.714487829+05:30
+    description: Hyperledger Fabric Orderer chart
+    digest: f3640372814bd900ee6e38d8adcb2221880c3f1c525e026055207b7e895b64ad
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    name: hlf-ord
+    urls:
+    - https://akhilrajmailbox.github.io/Hyperledger-Fabric/docs/hlf-ord-0.1.0.tgz
+    version: 0.1.0
+  hlf-peer:
+  - apiVersion: v1
+    appVersion: 1.4.3
+    created: 2019-12-19T14:39:59.714981503+05:30
+    description: Hyperledger Fabric Peer chart
+    digest: dad98ba55cab5e7804986dbf8e3f3e3c4c7ae938427376ee5122719ad744e51c
+    keywords:
+    - blockchain
+    - hyperledger
+    - fabric
+    name: hlf-peer
+    urls:
+    - https://akhilrajmailbox.github.io/Hyperledger-Fabric/docs/hlf-peer-0.1.0.tgz
+    version: 0.1.0
+generated: 2019-12-19T14:39:59.711228424+05:30

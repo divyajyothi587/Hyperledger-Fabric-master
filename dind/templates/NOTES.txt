@@ -1,0 +1,6 @@
+1. Get the application URL by running these commands:
+
+{{- if contains "ClusterIP" .Values.service.type }}
+  export SERVICE_URL=$(kubectl get svc --namespace {{ .Release.Namespace }} {{ include "dind.fullname" . }} -o jsonpath='{.metadata.name}')
+  echo "You have to configure your consumer with : http://${SERVICE_URL}:{{ $.Values.service.port }}"
+{{- end }}

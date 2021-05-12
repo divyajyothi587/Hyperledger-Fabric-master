@@ -1,0 +1,39 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: chaincodestorage
+  labels:
+    component: chaincodestorage
+    role: storage-server
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        component: chaincodestorage
+        role: storage-server
+    spec:
+      containers:
+      - name: chaincodestorage
+        imagePullPolicy: Always
+        image: akhilrajmailbox/ubuntu:16.04
+        env:
+        - name: NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        resources:
+          requests:
+            memory: "500Mi"
+            cpu: 100m
+          limits:
+            memory: "1Gi"
+            cpu: 1
+        volumeMounts:
+        - mountPath: /shared
+          name: sharedvolume
+      restartPolicy: Always
+      volumes:
+      - name: sharedvolume
+        persistentVolumeClaim:
+          claimName: shared-pvc
